@@ -17,8 +17,8 @@
 
       <q-tabs align="left">
         <q-route-tab to="/page1" label="Users" />
-        <q-route-tab to="/page2" label="Page Two" />
-        <q-route-tab to="/page3" label="Page Three" />
+        <q-route-tab to="/page2" label="Friends" />
+        <q-route-tab to="/page3" label="Rooms" />
       </q-tabs>
     </q-header>
 
