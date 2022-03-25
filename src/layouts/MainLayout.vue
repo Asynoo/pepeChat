@@ -3,16 +3,22 @@
 
     <q-header elevated class="bg-primary text-white" height-hint="98">
       <q-toolbar>
-        <q-btn dense flat round icon="menu" @click="toggleLeftDrawer" />
-
         <q-toolbar-title>
           <q-avatar>
-            <img src="https://cdn.quasar.dev/logo-v2/svg/logo-mono-white.svg">
+            <img src="http://assets.stickpng.com/images/5845cd230b2a3b54fdbaecf7.png">
           </q-avatar>
           {{ title }}
         </q-toolbar-title>
 
-        <q-btn dense flat round icon="menu" @click="toggleRightDrawer" />
+        <q-btn
+          to="/auth"
+          class="absolute-right q-pr-md"
+          icon="account_circle"
+          no-caps
+          flat
+          dense
+          label="Login"
+        />
       </q-toolbar>
 
       <q-tabs align="left">
@@ -21,14 +27,6 @@
         <q-route-tab to="/page3" label="Rooms" />
       </q-tabs>
     </q-header>
-
-    <q-drawer show-if-above v-model="leftDrawerOpen" side="left" bordered>
-      <!-- drawer content -->
-    </q-drawer>
-
-    <q-drawer show-if-above v-model="rightDrawerOpen" side="right" bordered>
-      <!-- drawer content -->
-    </q-drawer>
 
     <q-page-container>
       <router-view />
